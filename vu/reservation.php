@@ -21,10 +21,10 @@
   </section>
   <section>
     <form class="" action="../traitement/traitement_reservation.php" method="post">
-      <div class="">
+      <!--<div class="">
         <label for="">Nom</label>
         <input type="text" name="nom" value="">
-      </div>
+      </div>-->
       <div class="">
         <label for="">Place(s) à reserver</label>
         <input type="number" name="nb_place" value="" max="50" min="1">

@@ -1,10 +1,18 @@
+<?php session_start(); ?>
 <header>
+
         <div class="container">
                 <a class="logo" href="#"><img src="/Projet_site_restauration/images/logo-white.png" alt="Logo"></a>
-
+                <?php if (empty($_SESSION)) { ?>
                 <div class="right-area">
-                        <h6><a class="plr-20 color-white btn-fill-primary" href="#">ORDER: +34 685 778 8892</a></h6>
+                        <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\vu\inscription_connexion\connexion.php">Se Connecter</a></h6>
                 </div><!-- right-area -->
+              <?php }
+              else { ?>
+                <div class="right-area">
+                        <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\vu\inscription_connexion\connexion.php">Se déconnecter</a></h6>
+                </div><!-- right-area -->
+              <?php } ?>
 
                 <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
 

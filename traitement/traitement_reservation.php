@@ -1,8 +1,16 @@
 <?php
+session_start();
+$profil = unserialize($_SESSION['profil']);
 require 'class/class_reservation.php';
-if (isset($_POST['nb_place']) || isset($_POST['heure']) || isset($_POST['nom']))
+if (empty($_POST['nb_place']) || empty($_POST['heure']))
 {
-  $res = new reservation($_POST['nb_place'],$_POST['heure'],$_POST['nom']);
+  header('Location: ../vu/reservation.php');
+}
+else {
+  var_dump($profil);
+  var_dump($_POST);
+  echo $profil->Get_nom();
+  $res = new reservation($_POST['nb_place'],$_POST['heure'],'nom');
   try
   {
     $bdd = new PDO('mysql:host=localhost;dbname=projet_restaurant;charset=utf8','root','');
@@ -13,26 +21,23 @@ if (isset($_POST['nb_place']) || isset($_POST['heure']) || isset($_POST['nom']))
   }
   $req = $bdd->prepare('SELECT nom FROM reservation WHERE nom=:nom');
   $req->execute(array(// on lit les donnée de la base de donnée
-          'nom'=>$_POST['nom']));
-  $donne=$req->fetch();
-  var_dump($donne);
-  if ($donne==true) {
-    echo "nom";
-    header('Location: ..\vu\reservation.php');
-  }
-  else {
-    $req = $bdd->prepare('INSERT INTO reservation(nom, nb_place, heure) VALUES(:nom, :nb_place, :heure)');
-    $req->execute(array(// on insert les donnée dans la base de donnée
-      'nom'=>$res->Getnom(),
-      'nb_place'=>$res->Getnb_pers(),
-      'heure'=>$res->Getheure()));
-      echo $res->Getnom()." ";
-      echo $res->Getheure()." ";
-      echo $res->Getnb_pers();
-      header('Location: ../vu/reser_valider.php');
+    'nom'=>$profil->Get_nom()));
+    $donne=$req->fetch();
+    var_dump($donne);
+    if ($donne==true) {
+      echo "nom";
+      header('Location: ..\vu\reservation.php');
     }
-  }
-else {
-  header('Location: ../vu/reservation.php');
-}
+    else {
+      $req = $bdd->prepare('INSERT INTO reservation(nom, nb_place, heure) VALUES(:nom, :nb_place, :heure)');
+      $req->execute(array(// on insert les donnée dans la base de donnée
+        'nom'=>$res->Getnom(),
+        'nb_place'=>$res->Getnb_pers(),
+        'heure'=>$res->Getheure()));
+        echo $res->Getnom()." ";
+        echo $res->Getheure()." ";
+        echo $res->Getnb_pers();
+        header('Location: ../vu/reser_valider.php');
+      }
+    }
  ?>
