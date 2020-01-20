@@ -1,4 +1,10 @@
-<?php session_start(); ?>
+<?php session_start();
+require ' /../traitement/class/class_profil.php';
+if (isset($_SESSION['profil']))
+{
+
+  $profil = unserialize($_SESSION['profil']);
+}?>
 <header>
 
         <div class="container">
@@ -10,7 +16,7 @@
               <?php }
               else { ?>
                 <div class="right-area">
-                        <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\vu\inscription_connexion\connexion.php">Se déconnecter</a></h6>
+                        <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\traitement\deconnexion.php">Se déconnecter</a></h6>
                 </div><!-- right-area -->
               <?php } ?>
 

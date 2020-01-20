@@ -6,11 +6,12 @@
 
         <?php include 'include/head.php' ?>
 </head>
-<body>
 <?php
 include 'include/header.php';
-require 'traitement/class/class_profil.php';
-$profil = unserialize($_SESSION['profil']);?>
+
+?>
+
+<body>
 <section class="bg-1 h-900x main-slider pos-relative">
         <div class="triangle-up pos-bottom"></div>
         <div class="container h-100">
