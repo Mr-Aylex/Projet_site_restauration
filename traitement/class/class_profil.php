@@ -111,6 +111,7 @@ class profil
     catch(Exception $e)
     {
       die('Erreur:'.$e->getMessage());
+    }
       $req = $bdd->prepare('SELECT nom, prenom FROM compt WHERE nom=:nom, prenom=:prenom');
       $req->execute(array(// on lit les donnée de la base de donnée
       'nom'=>$this->Get_nom(),
@@ -156,7 +157,7 @@ class profil
       }
     }
   }
-}
+
 
 
 

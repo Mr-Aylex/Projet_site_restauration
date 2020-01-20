@@ -1,7 +1,8 @@
 <?php
+require dirname($_SERVER['DOCUMENT_ROOT']) . DIRECTORY_SEPARATOR . 'www/Projet_site_restauration/traitement/class/class_profil.php';
+require 'class/class_reservation.php';
 session_start();
 $profil = unserialize($_SESSION['profil']);
-require 'class/class_reservation.php';
 if (empty($_POST['nb_place']) || empty($_POST['heure']))
 {
   header('Location: ../vu/reservation.php');
@@ -9,7 +10,6 @@ if (empty($_POST['nb_place']) || empty($_POST['heure']))
 else {
   var_dump($profil);
   var_dump($_POST);
-  echo $profil->Get_nom();
   $res = new reservation($_POST['nb_place'],$_POST['heure'],'nom');
   try
   {
@@ -37,7 +37,8 @@ else {
         echo $res->Getnom()." ";
         echo $res->Getheure()." ";
         echo $res->Getnb_pers();
-        header('Location: ../vu/reser_valider.php');
+        //header('Location: ../vu/reser_valider.php');
+        header('Location: ../index.php');
       }
     }
  ?>
