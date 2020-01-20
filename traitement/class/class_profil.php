@@ -7,6 +7,7 @@ class profil
   private $_mail;
   private $_adresse;
   private $_numero;
+  private $_admin;
   private $_mdp;
 
   function __construct($array)
@@ -34,6 +35,7 @@ class profil
     $this->Set_mail($valeur['mail']);
     $this->Set_adresse($valeur['adresse']);
     $this->Set_numero($valeur['numero']);
+    $this->Set_admin($valeur['admin']);
     $this->Set_mdp($valeur['mdp']);
   }
   //Getter
@@ -56,6 +58,10 @@ class profil
   public function Get_numero()
   {
     return $this->_numero;
+  }
+  public function Get_admin()
+  {
+    return $this->_admin;
   }
   public function Get_mdp()
   {
@@ -86,6 +92,10 @@ class profil
   public function Set_numero($numero)
   {
     $this->_numero = $numero;
+  }
+  public function Set_admin($admin)
+  {
+    $this->_admin = $admin;
   }
   public function Set_mdp($mdp)
   {

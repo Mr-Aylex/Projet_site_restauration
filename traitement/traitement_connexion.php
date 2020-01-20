@@ -18,6 +18,7 @@ if($connexion == true){
     session_start();
     $profil = new profil($connexion);
     $_SESSION['profil'] = serialize($profil);
+    var_dump($connexion);
     //on redirige vers le menu
 
   header("Location: ../index.php");
