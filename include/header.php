@@ -27,15 +27,15 @@ if (isset($_SESSION['profil']))
 
                 <ul class="main-menu font-mountainsre" id="main-menu">
                         <li><a href="/Projet_site_restauration/index.php">HOME</a></li>
-                        <?php if (isset($_SESSION['profil'])) {
-                                if($profil->Get_admin()=="oui" or 'root') {
+                        <?php if (isset($_SESSION['profil'])) {?>
+                        <li><a href="/Projet_site_restauration/vu/reservation.php">Reservation</a></li>
+                        <?php    if($profil->Get_admin()=="oui" or 'root') {
                           ?>
                         <li><a href="/Projet_site_restauration/vu/admin.php">Admin</a></li>
-                      <?php }
+                        <?php }
                             } ?>
                         <li><a href="/Projet_site_restauration/vu/02_about_us.php">ABOUT US</a></li>
                         <li><a href="/Projet_site_restauration/vu/03_menu.php">SERVICES</a></li>
-                        <li><a href="/Projet_site_restauration/vu/reservation.php">Reservation</a></li>
                         <li><a href="/Projet_site_restauration/vu/05_contact.php">CONTACT</a></li>
                 </ul>
 

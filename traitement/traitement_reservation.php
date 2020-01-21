@@ -10,7 +10,7 @@ if (empty($_POST['nb_place']) || empty($_POST['heure']))
 else {
   var_dump($profil);
   var_dump($_POST);
-  $res = new reservation($_POST['nb_place'],$_POST['heure'],'nom');
+  $res = new reservation($_POST['nb_place'],$_POST['heure'],$profil->Get_nom());
   try
   {
     $bdd = new PDO('mysql:host=localhost;dbname=projet_restaurant;charset=utf8','root','');

@@ -19,5 +19,6 @@
         <input type="submit" name="" value="Envoyer">
       </div>
     </form>
+    <a href="inscription.php">Inscription</a>
   </body>
 </html>

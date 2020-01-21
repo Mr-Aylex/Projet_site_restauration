@@ -119,7 +119,7 @@ class profil
       $donne=$req->fetch();
       if ($donne==true)
       {
-        //header("Location: ")
+        header(dirname($_SERVER['DOCUMENT_ROOT']) . DIRECTORY_SEPARATOR . 'C:\wamp64\www\Projet_site_restauration\vu\inscription_connexion\inscription.php');
       }
       else
       {
@@ -129,7 +129,8 @@ class profil
         $donne=$req->fetch();
         if ($donne==true)
         {
-          //header("Location: ...")
+          header(dirname($_SERVER['DOCUMENT_ROOT']) . DIRECTORY_SEPARATOR . 'C:\wamp64\www\Projet_site_restauration\vu\inscription_connexion\inscription.php');
+
         }
         else
         {
@@ -139,7 +140,7 @@ class profil
           $donne=$req->fetch();
           if ($donne==true)
           {
-            //header("Location: ...")
+            header(dirname($_SERVER['DOCUMENT_ROOT']) . DIRECTORY_SEPARATOR . 'C:\wamp64\www\Projet_site_restauration\vu\inscription_connexion\inscription.php');
           }
           else
           {
