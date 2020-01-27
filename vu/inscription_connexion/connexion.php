@@ -3,8 +3,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <?php include '../../include/head.php' ?>
     <title></title>
   </head>
+  <?php  include '../../include/header.php';?>
   <body>
     <form class="" action="../../traitement/traitement_connexion.php" method="post">
       <div class="">

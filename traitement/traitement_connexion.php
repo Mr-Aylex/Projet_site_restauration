@@ -1,19 +1,8 @@
 <?php
-require 'class/class_profil.php';
-try {
-  $bdd = new PDO('mysql:host=localhost;dbname=projet_restaurant;charset=utf8','root','');
-}
-catch(Exception $e)
-{
-  die('ERREUR:'.$e->getMessage());
-}
-//On attribue les variables
-$mail = $_POST["mail"];
-$mdp = $_POST["mdp"];
-$req = $bdd->prepare('SELECT * FROM  compt WHERE mail=:mail and mdp=:mot_de_passe');
-$req->execute(array('mail'=>$mail,'mot_de_passe'=>$mdp));
-$connexion = $req->fetch();
-if($connexion == true){
+require 'model/class_profil.php';
+require 'manager/connexion_manager.php';
+$connexion = save_connexion($_POST);
+if($connexion== true){
   //On lance la sesssion
     session_start();
     $profil = new profil($connexion);
