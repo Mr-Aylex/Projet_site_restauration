@@ -36,6 +36,23 @@
       <input type="submit" name="" value="Envoyer">
     </form>
   </section>
+  <section>
+    <?php try
+    {
+      $bdd = new PDO('mysql:host=localhost;dbname=projet_restaurant;charset=utf8','root','');
+    }
+    catch(Exception $e)
+    {
+      die('ERREUR:'.$e->getMessage());
+    }
+    $connexion = $bdd->prepare('SELECT * FROM  reservation WHERE nom=:nom');
+    $connexion->execute(array('nom'=>$profil->Get_nom()));
+    $req = $connexion->fetch();
+    ?>
+    <h3>Votre reservation</h3>
+    <p>Heure: <?php echo $req['heure'];?></p>
+    <p>Nombre de places réserver: <?php echo $req['nb_place']; ?></p>
+  </section>
 
   <?php include '../include/footer.php' ?>
 

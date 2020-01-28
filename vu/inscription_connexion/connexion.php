@@ -8,7 +8,7 @@
   </head>
   <?php  include '../../include/header.php';?>
   <body>
-    <form class="" action="../../traitement/traitement_connexion.php" method="post">
+    <form id="formulaire" class="" action="../../traitement/traitement_connexion.php" method="post">
       <div class="">
         <label for="">Mail</label>
         <input type="text" name="mail" value="">
@@ -20,7 +20,7 @@
       <div class="">
         <input type="submit" name="" value="Envoyer">
       </div>
+      <a href="inscription.php">Inscription</a>
     </form>
-    <a href="inscription.php">Inscription</a>
   </body>
 </html>

@@ -6,8 +6,10 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 <link rel="stylesheet" href="/Projet_site_restauration/fonts/beyond_the_mountains-webfont.css" type="text/css"/>
 
-<!-- Stylesheets -->
+<!-- Stylesheets du template-->
 <link href="/Projet_site_restauration/plugin-frameworks/bootstrap.min.css" rel="stylesheet">
 <link href="/Projet_site_restauration/plugin-frameworks/swiper.css" rel="stylesheet">
 <link href="/Projet_site_restauration/fonts/ionicons.css" rel="stylesheet">
 <link href="/Projet_site_restauration/common/styles.css" rel="stylesheet">
+<!-- Stylesheets -->
+<link rel="stylesheet" href="\Projet_site_restauration\css\style.css">

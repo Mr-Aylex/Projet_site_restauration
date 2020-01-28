@@ -26,7 +26,7 @@ if (isset($_SESSION['profil']))
                 <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
 
                 <ul class="main-menu font-mountainsre" id="main-menu">
-                        <li><a href="/Projet_site_restauration/index.php">HOME</a></li>
+                        <li><a href="/Projet_site_restauration/index.php">Menu</a></li>
                         <?php if (isset($_SESSION['profil'])) {?>
                         <li><a href="/Projet_site_restauration/vu/reservation.php">Reservation</a></li>
                         <?php    if($profil->Get_admin()=="oui" or 'root') {
@@ -34,9 +34,9 @@ if (isset($_SESSION['profil']))
                         <li><a href="/Projet_site_restauration/vu/admin.php">Admin</a></li>
                         <?php }
                             } ?>
-                        <li><a href="/Projet_site_restauration/vu/02_about_us.php">ABOUT US</a></li>
-                        <li><a href="/Projet_site_restauration/vu/03_menu.php">SERVICES</a></li>
-                        <li><a href="/Projet_site_restauration/vu/05_contact.php">CONTACT</a></li>
+                        <li><a href="/Projet_site_restauration/vu/02_about_us.php">Notre restaurant</a></li>
+                        <li><a href="/Projet_site_restauration/vu/03_menu.php">Nos menus</a></li>
+                        <li><a href="/Projet_site_restauration/vu/05_contact.php">Contact</a></li>
                 </ul>
 
                 <div class="clearfix"></div>

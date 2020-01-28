@@ -7,42 +7,42 @@
   </head>
   <?php  include '../../include/header.php';?>
   <body>
-    <form class="" action="../../traitement/traitement_inscription.php" method="post">
-      <div class="">
+    <form id="formulaire"class="" action="../../traitement/traitement_inscription.php" method="post">
+      <div class="champ">
         <label for="nom">Nom</label>
-        <input id="nom" type="text" name="nom" value="">
-        <p id="nom_mess"></p>
+        <input id="nom" class="entrer_formulaire"type="text" name="nom" value="">
+        <p id="nom_mess"class="message"></p>
       </div>
-      <div class="">
+      <div class="champ">
         <label for="prenom">Prenom</label>
-        <input id="prenom" type="text" name="prenom" value="">
-        <p id="prenom_mess"></p>
+        <input id="prenom" class="entrer_formulaire"type="text" name="prenom" value="">
+        <p id="prenom_mess"class="message"></p>
       </div>
-      <div class="">
+      <div class="champ">
         <label for="adresse">Adresse</label>
-        <input id="adresse" type="text" name="adresse" value="">
-        <p id="adresse_mess"></p>
+        <input id="adresse" class="entrer_formulaire"type="text" name="adresse" value="">
+        <p id="adresse_mess"class="message"></p>
       </div>
-      <div class="">
+      <div class="champ">
         <label for="mail">Mail</label>
-        <input id="mail" type="text" name="mail" value="">
-        <p id="mail_mess"></p>
+        <input id="mail" class="entrer_formulaire"type="text" name="mail" value="">
+        <p id="mail_mess"class="message"></p>
       </div>
-      <div class="">
+      <div class="champ">
         <label for="num">Numero de téléphone</label>
-        <input id="num" type="text" name="numero" value="">
-        <p id="num_mess"></p>
+        <input id="num" class="entrer_formulaire"type="text" name="numero" value="">
+        <p id="num_mess"class="message"></p>
       </div>
-      <div class="">
+      <div class="champ">
         <label for="mdp">Mot de passe</label>
-        <input id="mdp" type="password" name="mdp" value="">
-        <p id="mdp_mess"></p>
+        <input id="mdp" class="entrer_formulaire"type="password" name="mdp" value="">
+        <p id="mdp_mess"class="message"></p>
       </div>
-      <div class="">
-        <input id="submit" type="submit" name="" value="Envoyer" onclick=""disabled>
+      <div class="champ">
+        <input id="submit"class="boutton" type="submit" name="" value="Envoyer" onclick=""disabled>
       </div>
+      <a href="connexion.php">Connexion</a>
     </form>
-    <a href="connexion.php">Connexion</a>
   </body>
   <script src="\Projet_site_restauration\js\require.js" charset="utf-8"></script>
   <script type="text/javascript">
@@ -51,7 +51,7 @@
     var mail = e.target.value;
     var adresse_valide = "";
     if (mail.indexOf("@")=== -1) {
-      adresse_valide = "Adresse invalide";
+      adresse_valide = "Adresse mail invalide";
       document.getElementById("submit").disabled = true;
     }
     else {
@@ -63,7 +63,7 @@
   document.getElementById("nom").addEventListener("blur",function(e){
     var nom = e.target.value;
     if (nom.length===0) {
-      var nom_court = "remplir le champ";
+      var nom_court = "Merci de remplir le champ nom";
       document.getElementById("submit").disabled = true;
     }
     else {
@@ -75,7 +75,7 @@
   document.getElementById("prenom").addEventListener("blur",function(e){
     var prenom = e.target.value;
     if (prenom.length===0) {
-      var prenom_court = "remplir le champ";
+      var prenom_court = "Merci de remplir le champ prenom";
       document.getElementById("submit").disabled = true;
     }
     else {
@@ -87,7 +87,7 @@
   document.getElementById("adresse").addEventListener("blur",function(e){
     var adresse = e.target.value;
     if (adresse.length===0) {
-      var adresse_court = "remplir le champ";
+      var adresse_court = "Merci de remplir l'adresse";
       document.getElementById("submit").disabled = true;
     }
     else {
@@ -99,7 +99,7 @@
   document.getElementById("num").addEventListener("blur",function(e){
     var num = e.target.value;
     if (num.length===0) {
-      var numero_court = "remplir le champ";
+      var numero_court = "Merci d'entrez votre numero de téléphone";
       document.getElementById("submit").disabled = true;
     }
     else {
