@@ -38,7 +38,7 @@
               <td><?php echo $value['heure']; ?></td>
               <td><?php echo $value['nb_place']; ?></td>
               <td id="boutton_modifier">
-                <form class="" action="\Projet_site_restauration\traitement\suppression_reservation.php" method="post">
+                <form class="" action="verification/suppr_res_verif_admin.php" method="get">
                 <input type="submit" name="nom" value="<?php echo $value['nom'] ?>">
               </form>
             </td>

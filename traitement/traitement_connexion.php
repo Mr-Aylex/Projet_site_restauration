@@ -1,13 +1,15 @@
 <?php
 require 'model/class_profil.php';
-require 'manager/connexion_manager.php';
-$connexion = save_connexion($_POST);
+require 'manager/profil_manager.php';
+$manager = new profil_manager();
+$connexion = $manager->save_connexion($_POST);
 if($connexion== true){
   //On lance la sesssion
     session_start();
     $profil = new profil($connexion);
+
+
     $_SESSION['profil'] = serialize($profil);
-    var_dump($connexion);
     //on redirige vers le menu
 
   header("Location: ../index.php");

@@ -1,6 +1,6 @@
 <?php session_start();
 
-require dirname($_SERVER['DOCUMENT_ROOT']) . DIRECTORY_SEPARATOR . 'www/Projet_site_restauration/traitement/model/class_profil.php';
+require ($_SERVER['DOCUMENT_ROOT']) . '/Projet_site_restauration/traitement/model/class_profil.php';
 if (isset($_SESSION['profil']))
 {
 
