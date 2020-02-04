@@ -47,6 +47,11 @@
                 </form>
         </div><!-- container -->
 </section>
+<section>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19818.384857767636!2d2.3309653657901723!3d48.8657232962123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71d4622c7a8173fd!2sO&#39;sci%C3%A0%20Pizzeria%20Napoletana!5e0!3m2!1sfr!2sfr!4v1580800095586!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+</section>
 
 
 <div class="map-area h-700x mb--30">

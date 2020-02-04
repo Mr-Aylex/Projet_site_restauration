@@ -39,7 +39,7 @@ class reservation_manager
     }
     $req = $bdd->prepare('DELETE FROM reservation WHERE nom=:nom');
     $req->execute(array(// on lit les donnée de la base de donnée
-        'nom' => $nom));
+    'nom' => $nom));
   }
 }
  ?>

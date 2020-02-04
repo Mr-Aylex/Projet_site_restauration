@@ -2,14 +2,14 @@
 
 class profil
 {
-  private $_id;
-  private $_nom;
-  private $_prenom;
-  private $_mail;
-  private $_adresse;
-  private $_numero;
-  private $_admin;
-  private $_mdp;
+  protected $_id;
+  protected $_nom;
+  protected $_prenom;
+  protected $_mail;
+  protected $_adresse;
+  protected $_numero;
+  protected $_admin;
+  protected $_mdp;
 
   function __construct($array)
   {

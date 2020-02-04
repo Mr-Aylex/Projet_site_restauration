@@ -7,8 +7,9 @@ if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['adresse']) 
 }
 else
 {
+    $manager = new profil_manager();
   $profil = new profil($_POST);
-  save($profil);
+    $manager->save($profil);
   header('Location: ../vu/inscription_connexion/connexion.php');
 }
  ?>

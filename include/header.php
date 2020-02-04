@@ -3,9 +3,7 @@
 require ($_SERVER['DOCUMENT_ROOT']) . '/Projet_site_restauration/traitement/model/class_profil.php';
 if (isset($_SESSION['profil']))
 {
-
   $profil = unserialize($_SESSION['profil']);
-
 }?>
 <header>
 
@@ -15,6 +13,7 @@ if (isset($_SESSION['profil']))
                  if (empty($_SESSION)) { ?>
                 <div class="right-area">
                         <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\vu\inscription_connexion\connexion.php">Se Connecter</a></h6>
+                    <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\vu\inscription_connexion\inscription.php">S'inscrire</a></h6>
                 </div><!-- right-area -->
               <?php }
               else { ?>

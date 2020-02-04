@@ -7,9 +7,12 @@
   </head>
   <?php include '../include/header.php'; ?>
   <body>
+  <section id="formulaire">
     <?php if ($profil->Get_admin()=='root') { ?>
       <section>
-
+          <div>
+              <a href="page_new_admin.php">Ajouter un administrateur</a>
+          </div>
       </section>
     <?php } ?>
     <?php if ($profil->Get_admin()=='root' or 'oui') { ?>
@@ -46,7 +49,11 @@
           <?php } ?>
         </table>
       </section>
+        <section>
+
+        </section>
     <?php } ?>
+  </section>
   </body>
   <script type="text/javascript">
 
