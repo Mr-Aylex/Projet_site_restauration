@@ -1,5 +1,5 @@
 <?php
-require 'class_profil.php'
+require 'class_profil.php';
 class admin extends profil
 {
     protected $var_admin;

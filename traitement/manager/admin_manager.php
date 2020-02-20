@@ -1,5 +1,5 @@
 <?php
-require '../model/class_admin.php'
+
 class admin_manager
 {
     public function enregistrer_dans_base($object)
@@ -33,12 +33,13 @@ class admin_manager
             }
             else
             {
-                $req = $bdd->prepare('INSERT INTO compt (nom, prenom, mail, mdp)
-                VALUES(:nom, :prenom, :mail, :mdp) ');
+                $req = $bdd->prepare('INSERT INTO compt (nom, prenom, mail, admin, mdp)
+                VALUES(:nom, :prenom, :mail, :admin, :mdp) ');
                 $req->execute(array(
                 'nom' => $object->Get_nom(),
                 'prenom' => $object->Get_prenom(),
                 'mail' => $object->Get_mail(),
+                'admin' => $object->getVarAdmin(),
                 'mdp' => $object->Get_mdp()));
             }
         }
