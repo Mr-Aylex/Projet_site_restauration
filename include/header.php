@@ -19,7 +19,12 @@ if (isset($_SESSION['profil']))
               else { ?>
                 <div class="right-area">
                         <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\traitement\deconnexion.php">Se déconnecter</a></h6>
+                        <h6><a href="">Panier <?php if (isset($_SESSION['panier'])){
+                            echo $_SESSION['panier'];
+                                }
+                                ?></a></h6>
                 </div><!-- right-area -->
+
               <?php } ?>
 
                 <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
