@@ -17,12 +17,12 @@
     <?php } ?>
     <?php if ($profil->Get_admin()=='root' or 'oui') { ?>
       <section>
-        <table>
+        <table class="table">
           <tr>
-            <th>Nom</th>
-            <th>Heure</th>
-            <th>Nombre de personnes</th>
-            <th>Supprimer</th>
+            <th class="col">Nom</th>
+            <th class="col">Heure</th>
+            <th class="col">Nombre de personnes</th>
+            <th class="col"></th>
           </tr>
           <?php
           try
@@ -36,14 +36,12 @@
           $connexion = $bdd->query('SELECT * FROM  reservation');
           $req = $connexion->fetchall();
           foreach ($req as $key => $value) { ?>
-            <tr>
+            <tr class="">
               <td><?php echo $value['nom']; ?></td>
               <td><?php echo $value['heure']; ?></td>
               <td><?php echo $value['nb_place']; ?></td>
               <td id="boutton_modifier">
-                <form class="" action="verification/suppr_res_verif_admin.php" method="get">
-                <input type="submit" name="nom" value="<?php echo $value['nom'] ?>">
-              </form>
+                <a class="btn-danger" href="verification/suppr_res_verif_admin.php?nom=<?php echo $value['nom'] ?>" method="get">Supprimer</a>
             </td>
             </tr>
           <?php } ?>

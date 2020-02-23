@@ -7,41 +7,42 @@
   </head>
   <?php  include '../../include/header.php';?>
   <body>
-    <form id="formulaire"class="" action="../../traitement/traitement_inscription.php" method="post">
-      <div class="champ">
+    <form id="formulaire"class="form-group" action="../../traitement/traitement_inscription.php" method="post">
+      <div class="row">
         <label for="nom">Nom</label>
-        <input id="nom" class="entrer_formulaire"type="text" name="nom" value="">
+        <input id="nom" class="form-control"type="text" name="nom" value="">
         <p id="nom_mess"class="message"></p>
       </div>
-      <div class="champ">
+      <div class="row">
         <label for="prenom">Prenom</label>
-        <input id="prenom" class="entrer_formulaire"type="text" name="prenom" value="">
+        <input id="prenom" class="form-control"type="text" name="prenom" value="">
         <p id="prenom_mess"class="message"></p>
       </div>
-      <div class="champ">
+      <div class="row">
         <label for="adresse">Adresse</label>
-        <input id="adresse" class="entrer_formulaire"type="text" name="adresse" value="">
+        <input id="adresse" class="form-control"type="text" name="adresse" value="">
         <p id="adresse_mess"class="message"></p>
       </div>
-      <div class="champ">
+      <div class="row">
         <label for="mail">Mail</label>
-        <input id="mail" class="entrer_formulaire"type="text" name="mail" value="">
+        <input id="mail" class="form-control"type="text" name="mail" value="">
         <p id="mail_mess"class="message"></p>
       </div>
-      <div class="champ">
+      <div class="row">
         <label for="num">Numero de téléphone</label>
-        <input id="num" class="entrer_formulaire"type="text" name="numero" value="">
+        <input id="num" class="form-control"type="text" name="numero" value="">
         <p id="num_mess"class="message"></p>
       </div>
-      <div class="champ">
+      <div class="row">
         <label for="mdp">Mot de passe</label>
-        <input id="mdp" class="entrer_formulaire"type="password" name="mdp" value="">
+        <input id="mdp" class="form-control"type="password" name="mdp" value="">
         <p id="mdp_mess"class="message"></p>
       </div>
-      <div class="champ">
-        <input id="submit"class="boutton" type="submit" name="" value="Envoyer" onclick=""disabled>
+      <div class="row">
+        <input id="submit"class="btn btn-primary" type="submit" name="" value="Envoyer" onclick=""disabled>
+          <a class="btn btn-secondary" href="connexion.php">Connexion</a>
       </div>
-      <a href="connexion.php">Connexion</a>
+
     </form>
   </body>
   <script src="\Projet_site_restauration\js\require.js" charset="utf-8"></script>

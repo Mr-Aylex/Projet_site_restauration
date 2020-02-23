@@ -19,24 +19,27 @@
       </div><!-- dplay-tbl -->
     </div><!-- container -->
   </section>
-  <section>
-    <form class="" action="../traitement/traitement_reservation.php" method="post">
+  <section class="container">
+    <form class="align-items-center" action="../traitement/traitement_reservation.php" method="post">
+        <div class="form-group">
+            <div class="row">
+                <label for="">Place(s) à reserver</label>
+                <input class="form-control col-2" type="number" name="nb_place" value="1" max="50" min="1">
+            </div>
+            <div class="row">
+                <label for="">Heure</label>
+                <input class="form-control col-2" type="time" name="heure" value="11:30"min="11:30" max="22:30">
+            </div>
+            <input class="col-1 form-control btn btn-primary" type="submit" name="" value="Envoyer">
+        </div>
       <!--<div class="">
         <label for="">Nom</label>
         <input type="text" name="nom" value="">
       </div>-->
-      <div class="">
-        <label for="">Place(s) à reserver</label>
-        <input type="number" name="nb_place" value="1" max="50" min="1">
-      </div>
-      <div class="">
-        <label for="">Heure</label>
-        <input type="time" name="heure" value="11:30"min="11:30" max="22:30">
-      </div>
-      <input type="submit" name="" value="Envoyer">
+
     </form>
   </section>
-  <section>
+  <section class="container">
     <?php try
     {
       $bdd = new PDO('mysql:host=localhost;dbname=projet_restaurant;charset=utf8','root','');
@@ -49,10 +52,14 @@
     $connexion->execute(array('nom'=>$profil->Get_nom()));
     $req = $connexion->fetch();
     ?>
-    <h3>Votre reservation</h3>
-    <p>Heure: <?php echo $req['heure'];?></p>
-    <p>Nombre de places réserver: <?php echo $req['nb_place']; ?></p>
-      <a href="verification/suppr_res_verif.php?nom=<?php echo $profil->Get_nom() ?>">Supprimer</a>
+
+      <h3 class="row">Votre reservation</h3>
+      <div class="col-8">
+          <p>Heure: <?php echo $req['heure'];?></p>
+          <p>Nombre de places réserver: <?php echo $req['nb_place']; ?></p>
+          <a href="verification/suppr_res_verif.php?nom=<?php echo $profil->Get_nom() ?>">Supprimer</a>
+      </div>
+
 
   </section>
 
