@@ -47,12 +47,10 @@
           <?php } ?>
         </table>
       </section>
-        <section>
-
-        </section>
     <?php } ?>
   </section>
   </body>
+  <?php include '../include/footer.php' ?>
   <script type="text/javascript">
 
   </script>

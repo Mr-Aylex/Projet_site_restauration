@@ -15,7 +15,7 @@
         <div class="container h-100">
                 <div class="dplay-tbl">
                         <div class="dplay-tbl-cell center-text color-white pt-90">
-                                <h2 class="mt-30 mb-15">About our Pizzaria</h2>
+                                <h2 class="mt-30 mb-15">Notre Pizzaria</h2>
                         </div><!-- dplay-tbl-cell -->
                 </div><!-- dplay-tbl -->
         </div><!-- container -->
@@ -29,7 +29,7 @@
                         <div class="col-md-6"><img class="mb-30" src="/Projet_site_restauration/images/about-1-600x400.jpg" alt=""></div>
                         <div class="col-md-6"><img class="mb-30" src="/Projet_site_restauration/images/about-2-600x400.jpg" alt=""></div>
                         <div class="col-md-12">
-                                <div class="mt-50 mt-sm-30 mb-50 mb-sm-30 center-text"> <h2>We are Lugais</h2> </div>
+                                <div class="mt-50 mt-sm-30 mb-50 mb-sm-30 center-text"> <h2></h2> </div>
 
                                 <h5 class="center-text mb-50 mb-sm-30 plr-25">Maecenas fermentum tortor id
                                         fringilla molestie. In  hac habitasse platea dictumst. Morbi maximus lobortis
@@ -55,7 +55,7 @@
                 </div><!-- row -->
 
                 <h6 class="center-text mt-40 mt-sm-30 mb-20">
-                        <a href="03_menu.php" class="btn-primaryc plr-25 mb-10 mlr-5"><b>SEE TODAYS MENU</b></a>
+                        <a href="03_menu.php" class="btn-primaryc plr-25 mb-10 mlr-5"><b>Menu du jour</b></a>
                 </h6>
 
         </div><!-- container -->

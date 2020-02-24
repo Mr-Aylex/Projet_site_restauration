@@ -57,7 +57,7 @@
       <div class="col-8">
           <p>Heure: <?php echo $req['heure'];?></p>
           <p>Nombre de places réserver: <?php echo $req['nb_place']; ?></p>
-          <a href="verification/suppr_res_verif.php?nom=<?php echo $profil->Get_nom() ?>">Supprimer</a>
+          <a class="btn btn-primary" href="verification/suppr_res_verif.php?nom=<?php echo $profil->Get_nom() ?>">Supprimer</a>
       </div>
 
 

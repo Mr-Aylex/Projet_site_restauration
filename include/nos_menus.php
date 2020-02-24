@@ -3,7 +3,7 @@
     <div class="container">
         <div class="heading">
             <img class="heading-img" src="\Projet_site_restauration\images/heading_logo.png" alt="">
-            <h2>Our Menu</h2>
+            <h2>Nos Menus</h2>
         </div>
 
         <div class="row">
