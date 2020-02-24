@@ -10,21 +10,19 @@
 
                 <div class="pt-30">
                         <p class="underline-secondary mb-10"><b>Phone:</b></p>
-                        <a href="tel:+53 345 7953 32453 ">+53 345 7953 32453 </a>
+                        <p href="">+53 345 7953 32453 </p>
                 </div>
 
                 <div class="pt-30">
                         <p class="underline-secondary mb-10"><b>Email:</b></p>
-                        <a href="mailto:yourmail@gmail.com"> yourmail@gmail.com</a>
+                        <p href=""> yourmail@gmail.com</p>
                 </div>
 
                 <ul class="icon mt-30">
-                        <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-dribbble-outline"></i></a></li>
-                        <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                        <li><a href="#"><i class="ion-social-vimeo"></i></a></li>
+                        <li><p href=""><i class="ion-social-facebook"></i></p></li>
+                        <li><p href=""><i class="ion-social-twitter"></i></p></li>
+                        <li><p href=""><i class="ion-social-dribbble-outline"></i></p></li>
+                        <li><p href=""><i class="ion-social-linkedin"></i></p></li>
                 </ul>
 
                 <p class="color-light font-9 mt-50 mt-sm-30"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

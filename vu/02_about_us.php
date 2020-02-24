@@ -15,7 +15,6 @@
         <div class="container h-100">
                 <div class="dplay-tbl">
                         <div class="dplay-tbl-cell center-text color-white pt-90">
-                                <h5><b>THE BEST IN TOWN</b></h5>
                                 <h2 class="mt-30 mb-15">About our Pizzaria</h2>
                         </div><!-- dplay-tbl-cell -->
                 </div><!-- dplay-tbl -->
@@ -56,8 +55,7 @@
                 </div><!-- row -->
 
                 <h6 class="center-text mt-40 mt-sm-30 mb-20">
-                        <a href="#" class="btn-primaryc plr-25 mb-10 mlr-5"><b>SEE TODAYS MENU</b></a>
-                        <a href="#" class="btn-primaryc secondary plr-50 mlr-5 mb-10"><b>ORDER NOW</b></a>
+                        <a href="03_menu.php" class="btn-primaryc plr-25 mb-10 mlr-5"><b>SEE TODAYS MENU</b></a>
                 </h6>
 
         </div><!-- container -->

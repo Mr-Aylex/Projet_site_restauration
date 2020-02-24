@@ -11,7 +11,7 @@
     <?php if ($profil->Get_admin()=='root') { ?>
       <section>
           <div>
-              <a href="page_new_admin.php">Ajouter un administrateur</a>
+              <a class="btn btn-dark" href="page_new_admin.php">Ajouter un administrateur</a>
           </div>
       </section>
     <?php } ?>
@@ -19,9 +19,9 @@
       <section>
         <table class="table">
           <tr>
-            <th class="col">Nom</th>
-            <th class="col">Heure</th>
-            <th class="col">Nombre de personnes</th>
+            <th class="col-1">Nom</th>
+            <th class="col-1">Heure</th>
+            <th class="col-3">Nombre de personnes</th>
             <th class="col"></th>
           </tr>
           <?php

@@ -8,17 +8,17 @@ if (isset($_SESSION['profil']))
 <header>
 
         <div class="container">
-                <a class="logo" href="#"><img src="/Projet_site_restauration/images/logo-white.png" alt="Logo"></a>
+                <a class="logo" href=""><img src="/Projet_site_restauration/images/logo-white.png" alt="Logo"></a>
                 <?php
                  if (empty($_SESSION)) { ?>
                 <div class="right-area">
-                        <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\vu\inscription_connexion\connexion.php">Se Connecter</a></h6>
-                    <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\vu\inscription_connexion\inscription.php">S'inscrire</a></h6>
+                        <a class="btn btn-danger" href="\Projet_site_restauration\vu\inscription_connexion\connexion.php">Se Connecter</a>
+                    <a class="btn btn-danger" href="\Projet_site_restauration\vu\inscription_connexion\inscription.php">S'inscrire</a>
                 </div><!-- right-area -->
               <?php }
               else { ?>
                 <div class="right-area">
-                        <h6><a class="plr-20 color-white btn-fill-primary" href="\Projet_site_restauration\traitement\deconnexion.php">Se déconnecter</a></h6>
+                        <a class="btn btn-danger" href="\Projet_site_restauration\traitement\deconnexion.php">Se déconnecter</a>
                 </div><!-- right-area -->
 
               <?php } ?>

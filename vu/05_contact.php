@@ -34,21 +34,10 @@
                                 Vivamus quis dolor ut arcu lobortis finibus a vitae leo. Sed eget tempus sem.
                                 Nullam sed lacus sed metus tincidunt lobortis lobortis at nibh. Morbi euismod, arcu in gravida rhoncus</p>
                 </div>
-
-                <form class="form-style-1 placeholder-1">
-                        <div class="row">
-                                <div class="col-md-6"> <input class="mb-20" type="text" placeholder="Name">  </div>
-                                <div class="col-md-6"> <input class="mb-20" type="text" placeholder="E-mail">  </div>
-                                <div class="col-md-12"><input class="mb-20" type="text" placeholder="Subject">  </div>
-                                <div class="col-md-12">
-                                        <textarea class="h-200x ptb-20" placeholder="Message"></textarea></div>
-                        </div><!-- row -->
-                        <h6 class="center-text mtb-30"><a href="#" class="btn-primaryc plr-25"><b>SEND MESSAGE</b></a></h6>
-                </form>
         </div><!-- container -->
 </section>
 <section>
-    <div>
+    <div style="margin: 0 auto">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19818.384857767636!2d2.3309653657901723!3d48.8657232962123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71d4622c7a8173fd!2sO&#39;sci%C3%A0%20Pizzeria%20Napoletana!5e0!3m2!1sfr!2sfr!4v1580800095586!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
 </section>
